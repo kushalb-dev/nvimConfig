@@ -184,6 +184,13 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagn
 -- or just use <C-\><C-n> to exit terminal mode
 vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 
+-- Exit the current file into netrw explorer after saving writing current change
+vim.keymap.set('n', '<leader>x', function()
+  vim.cmd 'write'
+  vim.cmd 'bd'
+  vim.cmd 'Ex'
+end, { desc = 'Write file and exit to netrw' })
+
 -- TIP: Disable arrow keys in normal mode
 -- vim.keymap.set('n', '<left>', '<cmd>echo "Use h to move!!"<CR>')
 -- vim.keymap.set('n', '<right>', '<cmd>echo "Use l to move!!"<CR>')
