@@ -187,7 +187,6 @@ vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' }
 -- Exit the current file into netrw explorer after saving writing current change
 vim.keymap.set('n', '<leader>x', function()
   vim.cmd 'write'
-  vim.cmd 'bd'
   vim.cmd 'Ex'
 end, { desc = 'Write file and exit to netrw' })
 
