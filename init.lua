@@ -126,6 +126,8 @@ vim.o.undofile = true
 
 -- Set tabstop to four spaces
 vim.o.tabstop = 4
+vim.o.shiftwidth = 4
+vim.o.softtabstop = 4
 
 -- Case-insensitive searching UNLESS \C or one or more capital letters in the search term
 vim.o.ignorecase = true
