@@ -144,11 +144,6 @@ vim.o.timeoutlen = 300
 vim.o.splitright = true
 vim.o.splitbelow = true
 
--- Basic jk mapping to exit insert mode, visual and command mode
-vim.keymap.set('i', 'jk', '<Esc>', { noremap = true, silent = true })
-vim.keymap.set('v', 'jk', '<Esc>', { noremap = true, silent = true })
-vim.keymap.set('c', 'jk', '<C-c>', { noremap = true, silent = true })
-
 -- Sets how neovim will display certain whitespace characters in the editor.
 --  See `:help 'list'`
 --  and `:help 'listchars'`
